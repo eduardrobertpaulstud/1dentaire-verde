@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Clinica Dentaire Verde
+
+A Next.js and Tailwind CSS portfolio demo that adapts the visual language of `mazecenter.ro` into a fictional dental clinic from Bucharest, Romania.
+
+The page uses a stark white header, black appointment CTA, full-bleed photographic hero, black treatment rail, blue-black manifesto section, image-led service blocks, editorial article rows, testimonials, and a dense footer to preserve the reference site's human-made rhythm.
 
 ## Getting Started
 
-First, run the development server:
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` starts the local development server.
+- `npm run lint` runs ESLint.
+- `npm run build` creates a production build.
 
-## Learn More
+## Project Notes
 
-To learn more about Next.js, take a look at the following resources:
+- Main route: `app/page.tsx`.
+- Global theme and motion: `app/globals.css`.
+- Reference audit and adaptation notes: `plans/`.
+- Fictional brand context: `PRODUCT.md` and `DESIGN.md`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Images are loaded from Unsplash through the Next image remote pattern in `next.config.ts`.

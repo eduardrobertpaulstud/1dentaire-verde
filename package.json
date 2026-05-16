@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "set \"NODE_OPTIONS=--use-system-ca\" && next dev --webpack",
+    "build": "set \"NODE_OPTIONS=--use-system-ca\" && next build --webpack",
+    "test": "node --test tests/*.test.mjs",
     "start": "next start",
     "lint": "eslint"
   },
