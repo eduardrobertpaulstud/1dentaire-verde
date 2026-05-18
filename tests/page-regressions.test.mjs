@@ -39,7 +39,7 @@ test("hero does not pin a second editorial image over the bottom of the first vi
   const hero = extractHeroSection(source);
 
   assert.doesNotMatch(hero, /absolute\s+bottom-\[/, "hero should not contain a bottom-pinned image overlay");
-  assert.match(source, /id="clinic-preview"/, "clinic preview imagery should live in its own section below the hero");
+  assert.match(source, /id="organic-band"/, "the hero should still flow into the promised organic transition band");
 });
 
 test("mobile menu is an isolated client component with accessible open state", () => {
@@ -63,7 +63,7 @@ test("above-fold imagery uses current Next image loading props and responsive si
   assert.doesNotMatch(source, /\spriority\b/, "Next 16 deprecates priority in favor of preload or fetchPriority");
   assert.match(source, /preload/, "the LCP hero image should be preloaded");
   assert.doesNotMatch(source, /fetchPriority="high"/, "preload should not be combined with fetchPriority on the same image");
-  assert.match(source, /sizes="\(max-width: 768px\) 100vw, 100vw"/, "the hero image should declare a mobile-first responsive size");
+  assert.match(source, /sizes="100vw"/, "the full-bleed hero image should declare a 100vw responsive size");
 });
 
 test("generated local media replaces remote stock imagery", () => {

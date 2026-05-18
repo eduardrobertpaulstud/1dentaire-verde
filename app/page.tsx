@@ -7,9 +7,6 @@ const heroImage =
 const organicBandImage =
   "/media/organic-band.jpg";
 
-const clinicPreviewImage =
-  "/media/clinic-band.jpg";
-
 const logoMark = "/media/logomark.svg";
 
 const blurPlaceholder =
@@ -93,6 +90,180 @@ const services = [
     text: "Albire, fatete, reconturare si restaurari care pastreaza expresia fetei. Naturalul este standardul nostru cel mai greu.",
     cta: "Vezi tratamentele estetice",
     image: "/media/services-estetica.jpg",
+  },
+];
+
+const priceGroups = [
+  {
+    kicker: "I — Consult si diagnostic",
+    title: "Inainte de orice tratament",
+    items: [
+      {
+        name: "Consult complet cu plan scris",
+        note: "45 de minute, radiografie, fotografii intraorale, recomandari etapizate.",
+        price: "250 lei",
+      },
+      {
+        name: "Consult ortodontic",
+        note: "Evaluare amanuntita pentru aparat fix sau alignere, cu fotografii de start.",
+        price: "300 lei",
+      },
+      {
+        name: "Radiografie panoramica",
+        note: "OPG digital, eliberare in aceeasi zi.",
+        price: "150 lei",
+      },
+      {
+        name: "CBCT, tomografie 3D",
+        note: "Volum partial sau total, esential pentru implant si chirurgie.",
+        price: "350 lei",
+      },
+    ],
+  },
+  {
+    kicker: "II — Profilaxie",
+    title: "Igienizare blanda, rutina onesta",
+    items: [
+      {
+        name: "Igienizare completa cu Airflow",
+        note: "Detartraj ultrasonic, Airflow cu pulbere fina, periaj profesional.",
+        price: "450 lei",
+      },
+      {
+        name: "Detartraj ultrasonic si periaj",
+        note: "Sedinta scurta pentru pacientii cu rutina constanta.",
+        price: "350 lei",
+      },
+      {
+        name: "Sigilare dinte, copil sau adult",
+        note: "Per dinte, indicat pentru molari cu santuri adanci.",
+        price: "200 lei",
+      },
+      {
+        name: "Gutiera nocturna pentru bruxism",
+        note: "Amprenta digitala, gutiera transparenta termoformata.",
+        price: "950 lei",
+      },
+    ],
+  },
+  {
+    kicker: "III — Restaurari si endodontie",
+    title: "Cand un dinte cere atentie acum",
+    items: [
+      {
+        name: "Obturatie compozit, carie mica sau medie",
+        note: "Material fotopolimerizabil, izolare cu diga.",
+        price: "500 lei",
+      },
+      {
+        name: "Obturatie compozit pe molar",
+        note: "Pentru carii intinse sau reconstructii ocluzale.",
+        price: "700 lei",
+      },
+      {
+        name: "Tratament endodontic monoradicular",
+        note: "Microscop, instrumentar rotativ, obturatie de canal.",
+        price: "750 lei",
+      },
+      {
+        name: "Tratament endodontic pluriradicular",
+        note: "Trei sau patru canale, sedinte programate cu calendar clar.",
+        price: "1.100 lei",
+      },
+      {
+        name: "Reconstructie dinte cu pivot",
+        note: "Pivot din fibra de sticla si bont in compozit.",
+        price: "1.100 lei",
+      },
+    ],
+  },
+  {
+    kicker: "IV — Protetica si implantologie",
+    title: "Solutii pe termen lung, evaluate cu rabdare",
+    items: [
+      {
+        name: "Coroana ceramica integrala E-max",
+        note: "Indicat pentru zona frontala, estetic firesc.",
+        price: "2.400 lei",
+      },
+      {
+        name: "Coroana zirconiu",
+        note: "Pentru zona laterala sau pacienti cu bruxism.",
+        price: "2.800 lei",
+      },
+      {
+        name: "Implant dentar premium Straumann",
+        note: "Sistem elvetian, garantie pe viata a corpului implantului.",
+        price: "5.500 lei",
+      },
+      {
+        name: "Coroana pe implant, zirconiu",
+        note: "Bont personalizat si fixare cu insurubare.",
+        price: "3.200 lei",
+      },
+      {
+        name: "Sinus lift extern, per sinus",
+        note: "Cand inaltimea osului nu permite implant direct.",
+        price: "4.500 lei",
+      },
+    ],
+  },
+  {
+    kicker: "V — Ortodontie",
+    title: "Alegeri clare pentru adolescenti si adulti",
+    items: [
+      {
+        name: "Aparat fix metalic, ambele arcade",
+        note: "Tratament complet, sedinte lunare de control incluse.",
+        price: "7.500 lei",
+      },
+      {
+        name: "Aparat fix ceramic sau safir",
+        note: "Brackets translucizi, mai discreti vizual.",
+        price: "11.500 lei",
+      },
+      {
+        name: "Aligneri Invisalign Lite",
+        note: "Pentru corectii limitate, pana la 14 etape.",
+        price: "17.500 lei",
+      },
+      {
+        name: "Aligneri Invisalign Full",
+        note: "Tratament complex, monitorizare cu scanare 3D.",
+        price: "24.500 lei",
+      },
+    ],
+  },
+  {
+    kicker: "VI — Estetica naturala",
+    title: "Rezultate care raman in nuanta ta",
+    items: [
+      {
+        name: "Albire profesionala Philips Zoom",
+        note: "O sedinta in cabinet, cu pregatire si fluorizare.",
+        price: "2.200 lei",
+      },
+      {
+        name: "Albire la domiciliu, gutiere personalizate",
+        note: "Set complet de gel si protocol scris.",
+        price: "1.500 lei",
+      },
+      {
+        name: "Fateta ceramica E-max, per dinte",
+        note: "Preparatie minim invaziva, amprenta digitala.",
+        price: "3.200 lei",
+      },
+      {
+        name: "Fateta compozita directa, per dinte",
+        note: "Aplicata intr-o sedinta, alternativa accesibila.",
+        price: "1.400 lei",
+      },
+      {
+        name: "Reconturare estetica dinte",
+        note: "Mici ajustari de forma fara anestezie.",
+        price: "600 lei",
+      },
+    ],
   },
 ];
 
@@ -222,6 +393,7 @@ export default function Home() {
         </a>
         <nav className="hidden items-center gap-8 font-display text-[13px] uppercase tracking-[0.16em] text-[var(--ink)] lg:flex" aria-label="Navigatie principala">
           <a href="#servicii" className="transition-colors duration-200 hover:text-[var(--coral-accessible)]">Servicii</a>
+          <a href="#preturi" className="transition-colors duration-200 hover:text-[var(--coral-accessible)]">Preturi</a>
           <a href="#echipa" className="transition-colors duration-200 hover:text-[var(--coral-accessible)]">Echipa</a>
           <a href="#articole" className="transition-colors duration-200 hover:text-[var(--coral-accessible)]">Articole</a>
           <a href="#contact" className="transition-colors duration-200 hover:text-[var(--coral-accessible)]">Contact</a>
@@ -243,8 +415,8 @@ export default function Home() {
           alt="Consult stomatologic atent intr-un cabinet luminos"
           fill
           preload
-          sizes="(max-width: 768px) 100vw, 100vw"
-          quality={78}
+          sizes="100vw"
+          quality={95}
           {...imageLoadingProps}
           className="absolute inset-0 -z-20 object-cover object-[52%_50%]"
         />
@@ -258,12 +430,16 @@ export default function Home() {
             e momentul pentru o
             <span className="block">vizita fara graba</span>
           </p>
-          <a href="#tratamente" aria-label="Mergi la tratamente" className="fade-up-late mt-12 inline-flex h-11 w-11 items-center justify-center border border-[var(--line-on-ink)] text-2xl leading-none transition-colors duration-200 hover:border-[var(--white-soft)] hover:bg-[var(--white-soft)] hover:text-[var(--ink)]">
-            <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none">
-              <path d="M12 4v15m0 0 6-6m-6 6-6-6" stroke="currentColor" strokeWidth="1.35" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </a>
         </div>
+        <a
+          href="#tratamente"
+          aria-label="Mergi la tratamente"
+          className="fade-up-late absolute bottom-24 left-1/2 z-10 inline-flex h-11 w-11 -translate-x-1/2 items-center justify-center border border-[var(--line-on-ink)] text-2xl leading-none transition-colors duration-200 hover:border-[var(--white-soft)] hover:bg-[var(--white-soft)] hover:text-[var(--ink)] sm:bottom-28"
+        >
+          <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none">
+            <path d="M12 4v15m0 0 6-6m-6 6-6-6" stroke="currentColor" strokeWidth="1.35" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </a>
       </section>
 
       <section id="organic-band" aria-label="Detaliu organic Dentaire Verde" className="relative h-[132px] overflow-hidden bg-[var(--paper-stone)] sm:h-[180px] md:h-[260px] lg:h-[320px]">
@@ -279,40 +455,27 @@ export default function Home() {
         />
       </section>
 
-      <section id="clinic-preview" aria-label="Interiorul clinicii" className="relative h-[132px] overflow-hidden bg-[var(--ink)] sm:h-[170px] md:h-[220px] lg:h-[270px]">
-        <Image
-          src={clinicPreviewImage}
-          alt="Interior cald de cabinet stomatologic cu scaun si lampa de tratament"
-          fill
-          loading="lazy"
-          sizes="100vw"
-          quality={72}
-          {...imageLoadingProps}
-          className="object-cover object-[50%_57%] opacity-95"
-        />
-      </section>
-
       <section id="tratamente" className="overflow-hidden bg-[var(--ink)] py-20 text-[var(--white-soft)] md:py-24">
-        <div className="mb-8 flex flex-wrap items-end justify-between gap-6 px-7 md:px-12">
-          <div>
-            <p className="font-display text-xs uppercase tracking-[0.28em] text-[var(--text-on-ink-mute)]">e momentul pentru o schimbare</p>
-            <h2 className="mt-4 max-w-2xl font-display text-[clamp(2.3rem,5vw,5rem)] font-semibold leading-none tracking-[-0.045em]">
-              tratamente cu pasii la vedere
-            </h2>
-          </div>
-        </div>
         <input
           id="pause-treatment-rail"
           type="checkbox"
           className="treatment-rail-toggle sr-only"
           aria-label="Opreste miscarea caruselului de tratamente"
         />
-        <label
-          htmlFor="pause-treatment-rail"
-          className="treatment-rail-toggle-label mx-7 mb-12 min-h-11 font-button text-[11px] uppercase tracking-[0.22em] md:mx-12"
-        >
-          Opreste miscarea
-        </label>
+        <div className="mb-12 flex flex-wrap items-end justify-between gap-6 px-7 md:px-12">
+          <div>
+            <p className="font-display text-xs uppercase tracking-[0.28em] text-[var(--text-on-ink-mute)]">e momentul pentru o schimbare</p>
+            <h2 className="mt-4 max-w-2xl font-display text-[clamp(2.3rem,5vw,5rem)] font-semibold leading-none tracking-[-0.045em]">
+              tratamente cu pasii la vedere
+            </h2>
+          </div>
+          <label
+            htmlFor="pause-treatment-rail"
+            className="treatment-rail-toggle-label inline-flex h-11 w-11 shrink-0 items-center justify-center"
+          >
+            <span className="sr-only">Opreste miscarea caruselului de tratamente</span>
+          </label>
+        </div>
         <div
           className="treatment-rail flex w-max gap-8 px-7 md:px-12"
           role="region"
@@ -434,6 +597,86 @@ export default function Home() {
                 </a>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="preturi" className="bg-[var(--paper-shade)] px-7 py-24 md:px-12 md:py-32">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-16 grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-end">
+            <div>
+              <p className="font-display text-xs uppercase tracking-[0.28em] text-[var(--muted)]">onorarii orientative pentru anul 2026</p>
+              <h2 className="mt-5 font-display text-[clamp(2.5rem,6vw,6.5rem)] font-semibold leading-[0.95] tracking-[-0.06em] text-[var(--ink)]">
+                Preturi la vedere, fara surprize.
+              </h2>
+            </div>
+            <p className="max-w-2xl text-[18px] leading-[1.75] text-[var(--ink-muted)]">
+              Iti scriem totul inainte: ce este urgent, ce poate astepta, cat costa fiecare etapa. Sumele de mai jos sunt repere reale, in lei, pentru pacientii Dentaire Verde din Bucuresti.
+            </p>
+          </div>
+
+          <div className="grid gap-14 lg:grid-cols-[0.78fr_1.22fr] lg:gap-20">
+            <aside className="lg:sticky lg:top-28 lg:self-start">
+              <p className="font-button text-[11px] uppercase tracking-[0.22em] text-[var(--muted)]">Plan scris, costuri scrise</p>
+              <p className="mt-5 font-display text-[28px] font-semibold leading-[1.15] tracking-[-0.03em] text-[var(--ink)]">
+                Fiecare pacient pleaca de la primul consult cu un calendar si un total clar.
+              </p>
+              <p className="mt-6 text-[16px] leading-[1.75] text-[var(--ink-muted)]">
+                Onorariile variaza in functie de complexitatea cazului, materialele alese si numarul de etape. Nu incepem niciun tratament inainte sa fii de acord cu costul scris.
+              </p>
+              <p className="mt-6 text-[16px] leading-[1.75] text-[var(--ink-muted)]">
+                Pentru cazurile etapizate propunem un calendar pe trei sau sase luni, cu prioritati medicale puse inaintea celor estetice.
+              </p>
+              <a
+                href="#contact"
+                className="cta-button mt-10 inline-flex bg-[var(--ink)] px-7 py-4 font-button text-[13px] font-light uppercase tracking-[0.16em] text-[var(--white-soft)]"
+              >
+                Cere un plan personalizat
+              </a>
+            </aside>
+
+            <div className="space-y-16 md:space-y-20">
+              {priceGroups.map((group) => (
+                <article key={group.kicker} aria-labelledby={`price-${group.kicker.split(" ")[0]}`}>
+                  <p className="font-button text-[11px] uppercase tracking-[0.22em] text-[var(--muted)]">{group.kicker}</p>
+                  <h3
+                    id={`price-${group.kicker.split(" ")[0]}`}
+                    className="mt-4 font-display text-[clamp(1.6rem,2.4vw,2.1rem)] font-semibold leading-[1.1] tracking-[-0.035em] text-[var(--ink)]"
+                  >
+                    {group.title}
+                  </h3>
+                  <dl className="mt-8 divide-y divide-[var(--line-on-paper)] border-t border-[var(--ink)]">
+                    {group.items.map((item) => (
+                      <div
+                        key={item.name}
+                        className="grid grid-cols-[1fr_auto] items-baseline gap-x-6 gap-y-3 py-6 md:gap-x-12"
+                      >
+                        <dt>
+                          <span className="block font-display text-[18px] font-semibold leading-[1.3] tracking-[-0.01em] text-[var(--ink)] md:text-[19px]">
+                            {item.name}
+                          </span>
+                          <span className="mt-2 block max-w-prose text-[14.5px] leading-[1.6] text-[var(--ink-muted)]">
+                            {item.note}
+                          </span>
+                        </dt>
+                        <dd className="text-right">
+                          <span className="block font-button text-[10.5px] uppercase tracking-[0.24em] text-[var(--muted)]">
+                            de la
+                          </span>
+                          <span className="mt-1.5 block font-display text-[22px] font-semibold leading-none tracking-[-0.015em] text-[var(--ink)] md:text-[24px]">
+                            {item.price}
+                          </span>
+                        </dd>
+                      </div>
+                    ))}
+                  </dl>
+                </article>
+              ))}
+
+              <p className="border-t border-[var(--line-on-paper)] pt-8 text-[14.5px] leading-[1.7] text-[var(--ink-muted)]">
+                Sumele sunt actualizate in primavara 2026 si pot varia in functie de complexitate, materiale si numar de sedinte. Anestezia, izolarea cu diga si protocoalele de sterilizare sunt incluse in fiecare tratament.
+              </p>
+            </div>
           </div>
         </div>
       </section>

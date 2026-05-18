@@ -133,18 +133,15 @@ button:focus-visible {
   animation-play-state: paused;
 }
 
-/* Editorial pause chip — small, underlined, low-key */
+/* Pause chip — square icon-only control, mirrors the hero scroll arrow */
 .treatment-rail-toggle-label {
   position: relative;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.7rem;
   cursor: pointer;
   color: var(--text-on-ink-soft);
-  border-bottom: 1px solid var(--line-on-ink);
-  padding: 0.35rem 0;
+  border: 1px solid var(--line-on-ink);
   transition: color 220ms var(--ease-out-editorial),
-    border-color 220ms var(--ease-out-editorial);
+    border-color 220ms var(--ease-out-editorial),
+    background-color 220ms var(--ease-out-editorial);
 }
 
 .treatment-rail-toggle-label::before {
@@ -152,28 +149,31 @@ button:focus-visible {
   display: inline-block;
   width: 0;
   height: 0;
-  border-left: 7px solid currentColor;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
+  border-left: 9px solid currentColor;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  margin-left: 2px;
   transition: all 220ms var(--ease-out-editorial);
 }
 
 .treatment-rail-toggle:checked + .treatment-rail-toggle-label::before {
-  width: 8px;
-  height: 10px;
+  width: 10px;
+  height: 12px;
+  margin-left: 0;
   border: 0;
   border-left: 3px solid currentColor;
   border-right: 3px solid currentColor;
 }
 
 .treatment-rail-toggle-label:hover {
-  color: var(--white-soft);
+  color: var(--ink);
+  background-color: var(--white-soft);
   border-color: var(--white-soft);
 }
 
 .treatment-rail-toggle:focus-visible + .treatment-rail-toggle-label {
   outline: 2px solid var(--coral-accessible);
-  outline-offset: 6px;
+  outline-offset: 4px;
 }
 
 .skip-link {
