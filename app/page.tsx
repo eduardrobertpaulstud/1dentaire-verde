@@ -321,7 +321,7 @@ const processTextures = [
     alt: "Plicuri numerotate pe raftul clinicii",
   },
   {
-    title: "Igiena fara spectacol",
+    title: "Protocoale de sterilizare",
     image: "/media/process-hands.jpg",
     alt: "Maini spalate la chiuveta clinicii, langa faianta sage",
   },
@@ -747,7 +747,7 @@ export default function Home() {
               Articole Esentiale
             </h2>
             <h3 className="mt-8 font-display text-[28px] font-semibold leading-tight tracking-[-0.03em] text-[var(--ink)]">
-              Stomatologie cu o abordare down to earth
+              Stomatologie scrisa pe intelesul tau
             </h3>
             <p className="mt-6 text-[17px] leading-[1.75] text-[var(--ink-muted)]">
               Scriem despre ce conteaza: durere, preventie, copii, implanturi, estetica si frica de dentist. Fara jargon. Fara idealizari. Doar informatii utile, spuse omeneste.
