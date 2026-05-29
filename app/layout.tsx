@@ -24,14 +24,14 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://dentaireverde.ro"),
-  title: "Clinica Dentaire Verde | Stomatologie in Bucuresti",
+  metadataBase: new URL("https://exemplu.ro"),
+  title: "Clinica Dentaire Verde | Stomatologie în București",
   description:
-    "Clinica stomatologica fictiva din Bucuresti, cu tratamente explicate clar, grija pentru pacienti anxiosi si servicii pentru intreaga familie.",
+    "Clinică stomatologică în București, cu tratamente explicate clar, grijă pentru pacienții anxioși și servicii pentru întreaga familie.",
   openGraph: {
-    title: "Clinica Dentaire Verde | Stomatologie in Bucuresti",
+    title: "Clinica Dentaire Verde | Stomatologie în București",
     description:
-      "Stomatologie cu rabdare in Bucuresti, intr-un demo de portofoliu cu tratamente explicate clar.",
+      "Stomatologie cu răbdare în București, cu tratamente explicate clar și planuri scrise înainte de fiecare procedură.",
     siteName: "Dentaire Verde",
     locale: "ro_RO",
     type: "website",
@@ -40,15 +40,15 @@ export const metadata: Metadata = {
         url: "/opengraph-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Dentaire Verde, stomatologie cu rabdare in Bucuresti",
+        alt: "Dentaire Verde, stomatologie cu răbdare în București",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Clinica Dentaire Verde | Stomatologie in Bucuresti",
+    title: "Clinica Dentaire Verde | Stomatologie în București",
     description:
-      "Stomatologie cu rabdare in Bucuresti, intr-un demo de portofoliu cu tratamente explicate clar.",
+      "Stomatologie cu răbdare în București, cu tratamente explicate clar și planuri scrise înainte de fiecare procedură.",
     images: ["/opengraph-image.jpg"],
   },
 };
@@ -65,7 +65,7 @@ export default function RootLayout({
     >
       <body className="min-h-full">
         <a href="#top" className="skip-link">
-          Sari la continut
+          Sari la conținut
         </a>
         {children}
       </body>

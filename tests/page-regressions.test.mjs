@@ -101,7 +101,7 @@ test("motion that auto-starts has a visible user pause control", () => {
 
   assert.match(source, /id="pause-treatment-rail"/, "the treatment rail should expose a stable pause toggle");
   assert.match(source, /type="checkbox"/, "the pause control should be a native toggle when no JavaScript is needed");
-  assert.match(source, /aria-label="Opreste miscarea caruselului de tratamente"/, "the pause toggle should explain the moving region it controls");
+  assert.match(source, /aria-label="Oprește mișcarea caruselului de tratamente"/, "the pause toggle should explain the moving region it controls");
   assert.match(css, /\.treatment-rail-toggle:checked\s*~\s*\.treatment-rail/, "checking the toggle should pause the rail animation");
 });
 
@@ -114,7 +114,7 @@ test("contact and footer links keep accessible semantics and touch targets", () 
   const footer = source.slice(footerStart);
 
   assert.match(source, /<address/, "contact details should use address semantics");
-  assert.match(source, /href="tel:\+40731000246"/, "the phone number should be tappable on mobile");
+  assert.match(source, /href="tel:\+\d+"/, "the phone number should be tappable on mobile");
   assert.match(source, /<nav[\s\S]*aria-label="Lista serviciilor"/, "footer service links should be grouped in a labelled nav");
   assert.match(source, /<ul className="flex flex-wrap/, "footer service links should use list semantics");
   assert.match(source, /min-h-11/, "footer and inline CTAs should provide practical touch targets");

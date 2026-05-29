@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 const menuLinks = [
   { label: "Servicii", href: "#servicii" },
-  { label: "Preturi", href: "#preturi" },
+  { label: "Prețuri", href: "#preturi" },
   { label: "Echipa", href: "#echipa" },
   { label: "Articole", href: "#articole" },
   { label: "Contact", href: "#contact" },
@@ -65,7 +65,7 @@ export default function MobileMenu() {
         ref={toggleRef}
         type="button"
         className="relative flex h-11 w-11 items-center justify-center"
-        aria-label={isMenuOpen ? "Inchide meniul" : "Deschide meniul"}
+        aria-label={isMenuOpen ? "Închide meniul" : "Deschide meniul"}
         aria-controls="mobile-menu"
         aria-expanded={isMenuOpen}
         onClick={() => setIsMenuOpen((current) => !current)}
@@ -87,7 +87,7 @@ export default function MobileMenu() {
           isMenuOpen ? "visible pointer-events-auto translate-y-0 opacity-100" : "invisible pointer-events-none -translate-y-3 opacity-0"
         }`}
       >
-        <nav className="grid gap-1 font-display text-[15px] font-semibold uppercase tracking-[0.14em] text-[var(--ink)]" aria-label="Navigatie mobila">
+        <nav className="grid gap-1 font-display text-[15px] font-semibold uppercase tracking-[0.14em] text-[var(--ink)]" aria-label="Navigație mobilă">
           {menuLinks.map((link) => (
             <a
               key={link.href}
